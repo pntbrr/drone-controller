@@ -1,0 +1,6 @@
+framework module Pods_DroneController {
+  umbrella header "Pods-DroneController-umbrella.h"
+
+  export *
+  module * { export * }
+}

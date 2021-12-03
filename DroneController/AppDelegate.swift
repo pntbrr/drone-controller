@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DroneController
 //
-//  Created by Ponk on 03/12/2021.
+//  Created by Ponk on 03/12/2021./Users/ponk/gobelins/Drones/SparkPerso/SparkPerso/SparkStarter/Automatic/Spark.swift
 //
 
 import UIKit
@@ -10,10 +10,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var productCommunicationManager = ProductCommunicationManager()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.productCommunicationManager.registerWithSDK()
+
+        
         return true
     }
 

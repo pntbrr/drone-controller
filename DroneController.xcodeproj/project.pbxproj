@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EBF7C32F2ACDBB134606055 /* Pods_DroneController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A546061E2438034CB336CA97 /* Pods_DroneController.framework */; };
 		FF28AC81275A20F40064C8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC80275A20F40064C8EA /* AppDelegate.swift */; };
 		FF28AC83275A20F40064C8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC82275A20F40064C8EA /* SceneDelegate.swift */; };
 		FF28AC85275A20F40064C8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC84275A20F40064C8EA /* ViewController.swift */; };
 		FF28AC88275A20F40064C8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF28AC86275A20F40064C8EA /* Main.storyboard */; };
 		FF28AC8A275A20F50064C8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF28AC89275A20F50064C8EA /* Assets.xcassets */; };
 		FF28AC8D275A20F50064C8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF28AC8B275A20F50064C8EA /* LaunchScreen.storyboard */; };
+		FF28AC9C275A255A0064C8EA /* DirectionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC98275A255A0064C8EA /* DirectionSequence.swift */; };
+		FF28AC9D275A255A0064C8EA /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC99275A255A0064C8EA /* Movement.swift */; };
+		FF28AC9E275A255A0064C8EA /* MovingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC9A275A255A0064C8EA /* MovingManager.swift */; };
+		FF28AC9F275A255A0064C8EA /* CGPoints+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC9B275A255A0064C8EA /* CGPoints+Extensions.swift */; };
+		FF28ACA1275A25A00064C8EA /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28ACA0275A25A00064C8EA /* Spark.swift */; };
+		FF28ACA3275A29B40064C8EA /* ProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28ACA2275A29B40064C8EA /* ProductCommunicationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FA115E2023BBB33A74D48D1 /* Pods-DroneController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneController.release.xcconfig"; path = "Target Support Files/Pods-DroneController/Pods-DroneController.release.xcconfig"; sourceTree = "<group>"; };
+		8F4751A25E9CD02FBF5927EE /* Pods-DroneController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneController.debug.xcconfig"; path = "Target Support Files/Pods-DroneController/Pods-DroneController.debug.xcconfig"; sourceTree = "<group>"; };
+		A546061E2438034CB336CA97 /* Pods_DroneController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroneController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28AC7D275A20F40064C8EA /* DroneController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28AC80275A20F40064C8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF28AC82275A20F40064C8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		FF28AC89275A20F50064C8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF28AC8C275A20F50064C8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF28AC8E275A20F50064C8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF28AC98275A255A0064C8EA /* DirectionSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionSequence.swift; sourceTree = "<group>"; };
+		FF28AC99275A255A0064C8EA /* Movement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		FF28AC9A275A255A0064C8EA /* MovingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingManager.swift; sourceTree = "<group>"; };
+		FF28AC9B275A255A0064C8EA /* CGPoints+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoints+Extensions.swift"; sourceTree = "<group>"; };
+		FF28ACA0275A25A00064C8EA /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		FF28ACA2275A29B40064C8EA /* ProductCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCommunicationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBF7C32F2ACDBB134606055 /* Pods_DroneController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57A4DC5D589AE1F2441E851E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F4751A25E9CD02FBF5927EE /* Pods-DroneController.debug.xcconfig */,
+				5FA115E2023BBB33A74D48D1 /* Pods-DroneController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B343D677E8E7738A7F64629 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A546061E2438034CB336CA97 /* Pods_DroneController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF28AC74275A20F40064C8EA = {
 			isa = PBXGroup;
 			children = (
 				FF28AC7F275A20F40064C8EA /* DroneController */,
 				FF28AC7E275A20F40064C8EA /* Products */,
+				57A4DC5D589AE1F2441E851E /* Pods */,
+				8B343D677E8E7738A7F64629 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +92,7 @@
 		FF28AC7F275A20F40064C8EA /* DroneController */ = {
 			isa = PBXGroup;
 			children = (
+				FF28AC94275A246C0064C8EA /* SparkSDK */,
 				FF28AC80275A20F40064C8EA /* AppDelegate.swift */,
 				FF28AC82275A20F40064C8EA /* SceneDelegate.swift */,
 				FF28AC84275A20F40064C8EA /* ViewController.swift */,
@@ -67,6 +104,27 @@
 			path = DroneController;
 			sourceTree = "<group>";
 		};
+		FF28AC94275A246C0064C8EA /* SparkSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF28AC97275A255A0064C8EA /* Moving */,
+				FF28ACA0275A25A00064C8EA /* Spark.swift */,
+				FF28ACA2275A29B40064C8EA /* ProductCommunicationManager.swift */,
+			);
+			path = SparkSDK;
+			sourceTree = "<group>";
+		};
+		FF28AC97275A255A0064C8EA /* Moving */ = {
+			isa = PBXGroup;
+			children = (
+				FF28AC98275A255A0064C8EA /* DirectionSequence.swift */,
+				FF28AC99275A255A0064C8EA /* Movement.swift */,
+				FF28AC9A275A255A0064C8EA /* MovingManager.swift */,
+				FF28AC9B275A255A0064C8EA /* CGPoints+Extensions.swift */,
+			);
+			path = Moving;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF28AC91275A20F50064C8EA /* Build configuration list for PBXNativeTarget "DroneController" */;
 			buildPhases = (
+				FB1EDC40F0886F72C2474C7C /* [CP] Check Pods Manifest.lock */,
 				FF28AC79275A20F40064C8EA /* Sources */,
 				FF28AC7A275A20F40064C8EA /* Frameworks */,
 				FF28AC7B275A20F40064C8EA /* Resources */,
+				BBC76835B376F533C79C1179 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +193,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BBC76835B376F533C79C1179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DroneController/Pods-DroneController-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DroneController/Pods-DroneController-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DroneController/Pods-DroneController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB1EDC40F0886F72C2474C7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DroneController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF28AC79275A20F40064C8EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF28AC85275A20F40064C8EA /* ViewController.swift in Sources */,
+				FF28AC9E275A255A0064C8EA /* MovingManager.swift in Sources */,
+				FF28AC9C275A255A0064C8EA /* DirectionSequence.swift in Sources */,
+				FF28AC9D275A255A0064C8EA /* Movement.swift in Sources */,
 				FF28AC81275A20F40064C8EA /* AppDelegate.swift in Sources */,
 				FF28AC83275A20F40064C8EA /* SceneDelegate.swift in Sources */,
+				FF28ACA3275A29B40064C8EA /* ProductCommunicationManager.swift in Sources */,
+				FF28AC9F275A255A0064C8EA /* CGPoints+Extensions.swift in Sources */,
+				FF28ACA1275A25A00064C8EA /* Spark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +392,14 @@
 		};
 		FF28AC92275A20F50064C8EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4751A25E9CD02FBF5927EE /* Pods-DroneController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L5Q78XY962;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DroneController/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,12 +423,14 @@
 		};
 		FF28AC93275A20F50064C8EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA115E2023BBB33A74D48D1 /* Pods-DroneController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L5Q78XY962;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DroneController/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +438,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
