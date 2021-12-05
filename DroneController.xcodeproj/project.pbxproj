@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9EBF7C32F2ACDBB134606055 /* Pods_DroneController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A546061E2438034CB336CA97 /* Pods_DroneController.framework */; };
+		FF195A52275CF3EF00BF6318 /* PeerTalkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF195A51275CF3EF00BF6318 /* PeerTalkManager.swift */; };
 		FF28AC81275A20F40064C8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC80275A20F40064C8EA /* AppDelegate.swift */; };
 		FF28AC83275A20F40064C8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC82275A20F40064C8EA /* SceneDelegate.swift */; };
 		FF28AC85275A20F40064C8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC84275A20F40064C8EA /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		5FA115E2023BBB33A74D48D1 /* Pods-DroneController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneController.release.xcconfig"; path = "Target Support Files/Pods-DroneController/Pods-DroneController.release.xcconfig"; sourceTree = "<group>"; };
 		8F4751A25E9CD02FBF5927EE /* Pods-DroneController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneController.debug.xcconfig"; path = "Target Support Files/Pods-DroneController/Pods-DroneController.debug.xcconfig"; sourceTree = "<group>"; };
 		A546061E2438034CB336CA97 /* Pods_DroneController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroneController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF195A51275CF3EF00BF6318 /* PeerTalkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTalkManager.swift; sourceTree = "<group>"; };
 		FF28AC7D275A20F40064C8EA /* DroneController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28AC80275A20F40064C8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF28AC82275A20F40064C8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF195A50275CF3DB00BF6318 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				FF195A51275CF3EF00BF6318 /* PeerTalkManager.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
 		FF28AC74275A20F40064C8EA = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		FF28AC7F275A20F40064C8EA /* DroneController */ = {
 			isa = PBXGroup;
 			children = (
+				FF195A50275CF3DB00BF6318 /* Communication */,
 				FF28AC94275A246C0064C8EA /* SparkSDK */,
 				FF28AC80275A20F40064C8EA /* AppDelegate.swift */,
 				FF28AC82275A20F40064C8EA /* SceneDelegate.swift */,
@@ -245,6 +256,7 @@
 				FF28AC9C275A255A0064C8EA /* DirectionSequence.swift in Sources */,
 				FF28AC9D275A255A0064C8EA /* Movement.swift in Sources */,
 				FF28AC81275A20F40064C8EA /* AppDelegate.swift in Sources */,
+				FF195A52275CF3EF00BF6318 /* PeerTalkManager.swift in Sources */,
 				FF28AC83275A20F40064C8EA /* SceneDelegate.swift in Sources */,
 				FF28ACA3275A29B40064C8EA /* ProductCommunicationManager.swift in Sources */,
 				FF28AC9F275A255A0064C8EA /* CGPoints+Extensions.swift in Sources */,
@@ -407,7 +419,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,7 +450,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -19,13 +19,32 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		710ACD866FB8783BEC406ECF22C76964 /* Pods-DroneController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA5A77D96E6CBDBADA807ACBDFD7BA /* Pods-DroneController-dummy.m */; };
-		7296EE88126821B5832716E71875EA78 /* Pods-DroneController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B91A5CC3DCD73382D807C9FEE1D42D53 /* Pods-DroneController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8BD9C94B4041292FCCA3F9A29E7500D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		00E7283C7D197EAEB59DE35976905FB6 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 484188DE7733244398A16A2D1EF30667 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26032AC74497FAB664DF10BF38933CC8 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = E0893A9B67333ADC95880B1E2F8777D4 /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C0CC10C3707F858CE9CAFA7DA3A188C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		58761C167F444D9F79469255D2DD3641 /* PTDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BE832D418159C0B66679729203B5B9D6 /* PTDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8402CA9370E46D2A658DC1293C7B7085 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB3F74CDB37D78D337DFEFFDF48DEA /* PTProtocol.m */; };
+		8928473E452AC82917099138FBBF5131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		931E8AC01E26537B9DD7CFE08DF54193 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 9094302AF2FBA9834B1A6E2F16590261 /* PTUSBHub.m */; };
+		9EFB0053F3F85F463198E5331821FFA0 /* Peertalk.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A18223E6156087C7BFB54E254BCF4F /* Peertalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD718E1DD4294745D657F6065ABCA760 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AC2A2F3F2D60C6B0C349A92E08C27D /* PTChannel.m */; };
+		B2AF3460ADFE8214BB0160C2ABE021DA /* PTPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 75575AA3B27BDB8DECE12DCC73A61790 /* PTPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F080DC7A0793B44703D11B7E544585 /* Pods-DroneController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B91A5CC3DCD73382D807C9FEE1D42D53 /* Pods-DroneController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9019385A2A85050923C1C1E5E740433 /* PeerTalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7882282F6A80C05DB838856CEBA6EBF0 /* PeerTalk-dummy.m */; };
+		D5B7F1D5E0C9E13118572A2A8EF0A739 /* PeerTalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F69A6CC48C320950433010C1BDE504 /* PeerTalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECFF1A41C984B0D665E34F5805B69407 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = F73853DE6A5137788F6B7F1D27D7F818 /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9DDB9644487E2E17A549422C7DCBBF7 /* Pods-DroneController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA5A77D96E6CBDBADA807ACBDFD7BA /* Pods-DroneController-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D7E04AF821F7A223AA69C7F0011DF81B /* PBXContainerItemProxy */ = {
+		C78817AB43CD3D4EF33AD6AD33A42B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FD69D817A22366167FF59EC7BC8EE7C;
+			remoteInfo = PeerTalk;
+		};
+		DD6115BC3BB232664EA4AD4181FFCD6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,35 +54,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DE3613541C1BE44B7156208A6E14F7 /* PeerTalk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PeerTalk-Info.plist"; sourceTree = "<group>"; };
 		1BAA5A77D96E6CBDBADA807ACBDFD7BA /* Pods-DroneController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DroneController-dummy.m"; sourceTree = "<group>"; };
+		21E3CAD7579C77E722C03AEAB7C40C7C /* DJI-SDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DJI-SDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		239AC6364379196DA0770D4158C618AD /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJISDK.framework; path = iOS_Mobile_SDK/DJISDK.framework; sourceTree = "<group>"; };
+		2461CF28490AB5180F107D5680BFD278 /* PeerTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeerTalk.release.xcconfig; sourceTree = "<group>"; };
+		31BB3F74CDB37D78D337DFEFFDF48DEA /* PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = peertalk/PTProtocol.m; sourceTree = "<group>"; };
+		3B1FCFA3DD590DFA424660EFF92E3212 /* PeerTalk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PeerTalk; path = PeerTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484188DE7733244398A16A2D1EF30667 /* PTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTProtocol.h; path = peertalk/PTProtocol.h; sourceTree = "<group>"; };
+		4A8C6164F3BBF1D23331139C08256CC7 /* PeerTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeerTalk.debug.xcconfig; sourceTree = "<group>"; };
 		4B845FA03DB3B2B9A112F9DD087CF359 /* Pods-DroneController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DroneController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54AC2A2F3F2D60C6B0C349A92E08C27D /* PTChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTChannel.m; path = peertalk/PTChannel.m; sourceTree = "<group>"; };
+		64F1FBF77BD0587F778F05C7A3402CC7 /* PeerTalk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-prefix.pch"; sourceTree = "<group>"; };
 		721345B279F734A3A25246C45C5B9342 /* Pods-DroneController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DroneController"; path = Pods_DroneController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E0C62A09C172854F7271E300741085 /* Pods-DroneController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DroneController-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75575AA3B27BDB8DECE12DCC73A61790 /* PTPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPrivate.h; path = peertalk/PTPrivate.h; sourceTree = "<group>"; };
+		7882282F6A80C05DB838856CEBA6EBF0 /* PeerTalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeerTalk-dummy.m"; sourceTree = "<group>"; };
+		837848EF2E9BFDD3DA4C3E3645188931 /* PeerTalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PeerTalk.modulemap; sourceTree = "<group>"; };
+		9094302AF2FBA9834B1A6E2F16590261 /* PTUSBHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTUSBHub.m; path = peertalk/PTUSBHub.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A068759D79250DFEBE76F5506F440939 /* DJI-SDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DJI-SDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A2CE056090104D45F065D7170BAF10EB /* Pods-DroneController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DroneController-frameworks.sh"; sourceTree = "<group>"; };
-		B2F163BB002791C25C68BC38E5BBED7F /* DJI-SDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DJI-SDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B704D9E7CE60738F111AF89BE2BE9EED /* Pods-DroneController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DroneController-Info.plist"; sourceTree = "<group>"; };
 		B91A5CC3DCD73382D807C9FEE1D42D53 /* Pods-DroneController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DroneController-umbrella.h"; sourceTree = "<group>"; };
 		B9D1E360553BC030222B4241739D482A /* Pods-DroneController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DroneController.release.xcconfig"; sourceTree = "<group>"; };
+		BE832D418159C0B66679729203B5B9D6 /* PTDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTDefines.h; path = peertalk/PTDefines.h; sourceTree = "<group>"; };
 		C44DA4476AD38C6C869105C2244E0927 /* Pods-DroneController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DroneController.debug.xcconfig"; sourceTree = "<group>"; };
+		C9A18223E6156087C7BFB54E254BCF4F /* Peertalk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Peertalk.h; path = peertalk/Peertalk.h; sourceTree = "<group>"; };
 		CF18BE18B2B7C5DC8E7E4CF426FC5545 /* Pods-DroneController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DroneController.modulemap"; sourceTree = "<group>"; };
-		D6D6388859E4A4CF6B76CE2E9F107E13 /* DJI-SDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DJI-SDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		E68F291BADD677DA07E3C886DC36483A /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJISDK.framework; path = iOS_Mobile_SDK/DJISDK.framework; sourceTree = "<group>"; };
+		E0893A9B67333ADC95880B1E2F8777D4 /* PTUSBHub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTUSBHub.h; path = peertalk/PTUSBHub.h; sourceTree = "<group>"; };
+		F3F69A6CC48C320950433010C1BDE504 /* PeerTalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-umbrella.h"; sourceTree = "<group>"; };
+		F73853DE6A5137788F6B7F1D27D7F818 /* PTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = peertalk/PTChannel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D439C784B212308B063FB6BFEAC24C9D /* Frameworks */ = {
+		041DF8EB3E7E32D60072CE95D7A33A38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8BD9C94B4041292FCCA3F9A29E7500D /* Foundation.framework in Frameworks */,
+				4C0CC10C3707F858CE9CAFA7DA3A188C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE99FDB221DF876A3B39C10BB8AC405F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8928473E452AC82917099138FBBF5131 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DD1724C5521CDA9E744A0C46E151E13 /* DJI-SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A4B63EC1CB66A35D8672D8DB4F0A7207 /* Frameworks */,
+				7E9D82353A574B876E92EB905D4CBA7D /* Support Files */,
+			);
+			name = "DJI-SDK-iOS";
+			path = "DJI-SDK-iOS";
+			sourceTree = "<group>";
+		};
 		366DC57F5000C6A8046A1BE73D4E9CC9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +126,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3D8CE5B8F1A66E26E3815C93F1E57BB9 /* Pods */ = {
+		4B3A1427FCB38BC4D44B65F71BF9F1E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C88098BE17F33983C90757E5F275086 /* DJI-SDK-iOS */,
+				3B1FCFA3DD590DFA424660EFF92E3212 /* PeerTalk */,
+				721345B279F734A3A25246C45C5B9342 /* Pods-DroneController */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -88,14 +143,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5C88098BE17F33983C90757E5F275086 /* DJI-SDK-iOS */ = {
+		72E0F737B8BEF95C65B74E5A84F90F9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				99EACF3946D60C35B423E996C2C5A2D9 /* Frameworks */,
-				EF87CF10FF15FA4BA4F5C6F14FB67172 /* Support Files */,
+				2DD1724C5521CDA9E744A0C46E151E13 /* DJI-SDK-iOS */,
+				BEDD664C7DC80CB13C8FD5323B7C2656 /* PeerTalk */,
 			);
-			name = "DJI-SDK-iOS";
-			path = "DJI-SDK-iOS";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E9D82353A574B876E92EB905D4CBA7D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21E3CAD7579C77E722C03AEAB7C40C7C /* DJI-SDK-iOS.debug.xcconfig */,
+				A068759D79250DFEBE76F5506F440939 /* DJI-SDK-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DJI-SDK-iOS";
 			sourceTree = "<group>";
 		};
 		84A88A5ABFC10BC7AAAFFB5E8CA5E56E /* Pods-DroneController */ = {
@@ -115,20 +179,45 @@
 			path = "Target Support Files/Pods-DroneController";
 			sourceTree = "<group>";
 		};
-		99EACF3946D60C35B423E996C2C5A2D9 /* Frameworks */ = {
+		8EE9B2F04314C53FFEBCA7828C9272FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E68F291BADD677DA07E3C886DC36483A /* DJISDK.framework */,
+				837848EF2E9BFDD3DA4C3E3645188931 /* PeerTalk.modulemap */,
+				7882282F6A80C05DB838856CEBA6EBF0 /* PeerTalk-dummy.m */,
+				03DE3613541C1BE44B7156208A6E14F7 /* PeerTalk-Info.plist */,
+				64F1FBF77BD0587F778F05C7A3402CC7 /* PeerTalk-prefix.pch */,
+				F3F69A6CC48C320950433010C1BDE504 /* PeerTalk-umbrella.h */,
+				4A8C6164F3BBF1D23331139C08256CC7 /* PeerTalk.debug.xcconfig */,
+				2461CF28490AB5180F107D5680BFD278 /* PeerTalk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PeerTalk";
+			sourceTree = "<group>";
+		};
+		A4B63EC1CB66A35D8672D8DB4F0A7207 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				239AC6364379196DA0770D4158C618AD /* DJISDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFEC3D3BD64EA2F1A9633273679904C0 /* Products */ = {
+		BEDD664C7DC80CB13C8FD5323B7C2656 /* PeerTalk */ = {
 			isa = PBXGroup;
 			children = (
-				721345B279F734A3A25246C45C5B9342 /* Pods-DroneController */,
+				C9A18223E6156087C7BFB54E254BCF4F /* Peertalk.h */,
+				F73853DE6A5137788F6B7F1D27D7F818 /* PTChannel.h */,
+				54AC2A2F3F2D60C6B0C349A92E08C27D /* PTChannel.m */,
+				BE832D418159C0B66679729203B5B9D6 /* PTDefines.h */,
+				75575AA3B27BDB8DECE12DCC73A61790 /* PTPrivate.h */,
+				484188DE7733244398A16A2D1EF30667 /* PTProtocol.h */,
+				31BB3F74CDB37D78D337DFEFFDF48DEA /* PTProtocol.m */,
+				E0893A9B67333ADC95880B1E2F8777D4 /* PTUSBHub.h */,
+				9094302AF2FBA9834B1A6E2F16590261 /* PTUSBHub.m */,
+				8EE9B2F04314C53FFEBCA7828C9272FB /* Support Files */,
 			);
-			name = Products;
+			name = PeerTalk;
+			path = PeerTalk;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -136,8 +225,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				3D8CE5B8F1A66E26E3815C93F1E57BB9 /* Pods */,
-				BFEC3D3BD64EA2F1A9633273679904C0 /* Products */,
+				72E0F737B8BEF95C65B74E5A84F90F9E /* Pods */,
+				4B3A1427FCB38BC4D44B65F71BF9F1E9 /* Products */,
 				366DC57F5000C6A8046A1BE73D4E9CC9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -150,24 +239,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF87CF10FF15FA4BA4F5C6F14FB67172 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2F163BB002791C25C68BC38E5BBED7F /* DJI-SDK-iOS.debug.xcconfig */,
-				D6D6388859E4A4CF6B76CE2E9F107E13 /* DJI-SDK-iOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DJI-SDK-iOS";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D2B9BB911780D7083F6E218364A05E74 /* Headers */ = {
+		02F626EB586CFED0595E65C7996E10B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7296EE88126821B5832716E71875EA78 /* Pods-DroneController-umbrella.h in Headers */,
+				9EFB0053F3F85F463198E5331821FFA0 /* Peertalk.h in Headers */,
+				D5B7F1D5E0C9E13118572A2A8EF0A739 /* PeerTalk-umbrella.h in Headers */,
+				ECFF1A41C984B0D665E34F5805B69407 /* PTChannel.h in Headers */,
+				58761C167F444D9F79469255D2DD3641 /* PTDefines.h in Headers */,
+				B2AF3460ADFE8214BB0160C2ABE021DA /* PTPrivate.h in Headers */,
+				00E7283C7D197EAEB59DE35976905FB6 /* PTProtocol.h in Headers */,
+				26032AC74497FAB664DF10BF38933CC8 /* PTUSBHub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C19CBAC9D5B45CCB165B5C06104DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F080DC7A0793B44703D11B7E544585 /* Pods-DroneController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,21 +269,40 @@
 /* Begin PBXNativeTarget section */
 		44A79E26BE61360651D60D0066064A49 /* Pods-DroneController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FE8EB0D6BCB7B38115FD22B38AAB135 /* Build configuration list for PBXNativeTarget "Pods-DroneController" */;
+			buildConfigurationList = 0B12E71FA62CA278A0D9130698A56034 /* Build configuration list for PBXNativeTarget "Pods-DroneController" */;
 			buildPhases = (
-				D2B9BB911780D7083F6E218364A05E74 /* Headers */,
-				A375A34BCEB513E8B7E85DEC8EA59865 /* Sources */,
-				D439C784B212308B063FB6BFEAC24C9D /* Frameworks */,
-				D914FA6E30D837E6BEF08F6B3B588B35 /* Resources */,
+				CC7C19CBAC9D5B45CCB165B5C06104DF /* Headers */,
+				7D3030CC33D8B45722097A2515FD3084 /* Sources */,
+				BE99FDB221DF876A3B39C10BB8AC405F /* Frameworks */,
+				E3392AA8D5D81056519100D1110D4567 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F222634CE2BD9738363CC053821591C0 /* PBXTargetDependency */,
+				293A496B59854C09C04B15EBB28A02C7 /* PBXTargetDependency */,
+				1EB89FCCFA05966D3F24EB13A33A2FC1 /* PBXTargetDependency */,
 			);
 			name = "Pods-DroneController";
 			productName = Pods_DroneController;
 			productReference = 721345B279F734A3A25246C45C5B9342 /* Pods-DroneController */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FD69D817A22366167FF59EC7BC8EE7C /* PeerTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7F041565D95A050C44B041DDEBE5BD /* Build configuration list for PBXNativeTarget "PeerTalk" */;
+			buildPhases = (
+				02F626EB586CFED0595E65C7996E10B5 /* Headers */,
+				552D6354AEED142C8798632E7B5C048F /* Sources */,
+				041DF8EB3E7E32D60072CE95D7A33A38 /* Frameworks */,
+				D8ED28481F0D7B913671AC4D3C83E7EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeerTalk;
+			productName = PeerTalk;
+			productReference = 3B1FCFA3DD590DFA424660EFF92E3212 /* PeerTalk */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -211,18 +323,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BFEC3D3BD64EA2F1A9633273679904C0 /* Products */;
+			productRefGroup = 4B3A1427FCB38BC4D44B65F71BF9F1E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6D72D25C203F68284F9FF3A11DEB60C9 /* DJI-SDK-iOS */,
+				6FD69D817A22366167FF59EC7BC8EE7C /* PeerTalk */,
 				44A79E26BE61360651D60D0066064A49 /* Pods-DroneController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D914FA6E30D837E6BEF08F6B3B588B35 /* Resources */ = {
+		D8ED28481F0D7B913671AC4D3C83E7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3392AA8D5D81056519100D1110D4567 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,29 +352,82 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A375A34BCEB513E8B7E85DEC8EA59865 /* Sources */ = {
+		552D6354AEED142C8798632E7B5C048F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710ACD866FB8783BEC406ECF22C76964 /* Pods-DroneController-dummy.m in Sources */,
+				C9019385A2A85050923C1C1E5E740433 /* PeerTalk-dummy.m in Sources */,
+				AD718E1DD4294745D657F6065ABCA760 /* PTChannel.m in Sources */,
+				8402CA9370E46D2A658DC1293C7B7085 /* PTProtocol.m in Sources */,
+				931E8AC01E26537B9DD7CFE08DF54193 /* PTUSBHub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3030CC33D8B45722097A2515FD3084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DDB9644487E2E17A549422C7DCBBF7 /* Pods-DroneController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F222634CE2BD9738363CC053821591C0 /* PBXTargetDependency */ = {
+		1EB89FCCFA05966D3F24EB13A33A2FC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PeerTalk;
+			target = 6FD69D817A22366167FF59EC7BC8EE7C /* PeerTalk */;
+			targetProxy = C78817AB43CD3D4EF33AD6AD33A42B8D /* PBXContainerItemProxy */;
+		};
+		293A496B59854C09C04B15EBB28A02C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "DJI-SDK-iOS";
 			target = 6D72D25C203F68284F9FF3A11DEB60C9 /* DJI-SDK-iOS */;
-			targetProxy = D7E04AF821F7A223AA69C7F0011DF81B /* PBXContainerItemProxy */;
+			targetProxy = DD6115BC3BB232664EA4AD4181FFCD6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F1D7F053DD2C9542696456D77F191A3 /* Release */ = {
+		1428E7E317C3BE50EAD1A7BB2101D9E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9D1E360553BC030222B4241739D482A /* Pods-DroneController.release.xcconfig */;
+			baseConfigurationReference = 2461CF28490AB5180F107D5680BFD278 /* PeerTalk.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeerTalk/PeerTalk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
+				PRODUCT_MODULE_NAME = PeerTalk;
+				PRODUCT_NAME = PeerTalk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		452A845512F7D377E13789EB957D1DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44DA4476AD38C6C869105C2244E0927 /* Pods-DroneController.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -268,7 +441,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DroneController/Pods-DroneController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,30 +457,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		74F5F7C85CBE818C6E7610497761B4B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6D6388859E4A4CF6B76CE2E9F107E13 /* DJI-SDK-iOS.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -360,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -373,9 +528,9 @@
 			};
 			name = Debug;
 		};
-		9442C818E97F82487CBAF5562EF91111 /* Debug */ = {
+		6692DA3C16CBF36A8E413595EEFF4511 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C44DA4476AD38C6C869105C2244E0927 /* Pods-DroneController.debug.xcconfig */;
+			baseConfigurationReference = B9D1E360553BC030222B4241739D482A /* Pods-DroneController.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -389,7 +544,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DroneController/Pods-DroneController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,12 +560,30 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+		74F5F7C85CBE818C6E7610497761B4B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A068759D79250DFEBE76F5506F440939 /* DJI-SDK-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -460,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,9 +645,44 @@
 			};
 			name = Release;
 		};
+		BC15BF3E831E46AFC780F46D318EF701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8C6164F3BBF1D23331139C08256CC7 /* PeerTalk.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeerTalk/PeerTalk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
+				PRODUCT_MODULE_NAME = PeerTalk;
+				PRODUCT_NAME = PeerTalk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FD83CC003AAA8DE68820AE75C585B733 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2F163BB002791C25C68BC38E5BBED7F /* DJI-SDK-iOS.debug.xcconfig */;
+			baseConfigurationReference = 21E3CAD7579C77E722C03AEAB7C40C7C /* DJI-SDK-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,11 +699,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FE8EB0D6BCB7B38115FD22B38AAB135 /* Build configuration list for PBXNativeTarget "Pods-DroneController" */ = {
+		0B12E71FA62CA278A0D9130698A56034 /* Build configuration list for PBXNativeTarget "Pods-DroneController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9442C818E97F82487CBAF5562EF91111 /* Debug */,
-				0F1D7F053DD2C9542696456D77F191A3 /* Release */,
+				452A845512F7D377E13789EB957D1DFB /* Debug */,
+				6692DA3C16CBF36A8E413595EEFF4511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -503,8 +711,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
-				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -514,6 +722,15 @@
 			buildConfigurations = (
 				FD83CC003AAA8DE68820AE75C585B733 /* Debug */,
 				74F5F7C85CBE818C6E7610497761B4B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7F041565D95A050C44B041DDEBE5BD /* Build configuration list for PBXNativeTarget "PeerTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC15BF3E831E46AFC780F46D318EF701 /* Debug */,
+				1428E7E317C3BE50EAD1A7BB2101D9E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

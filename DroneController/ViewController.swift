@@ -8,16 +8,30 @@
 import UIKit
 import DJISDK
 
+
+
+
 class ViewController: UIViewController {
     
     let commonValue:Float = 0.5
     var lastTime = 0.0
     var stopNow = false
+    
 
     @IBOutlet weak var connectionStateLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        PeerTalkManager.instance.onConnect { address in
+            print("connected to \(address)")
+        }
+        PeerTalkManager.instance.onMessage { message in
+            print(message)
+            if message == "rise" {
+                // On mettra le délai de la séquence ici
+                PeerTalkManager.instance.send(message: "start arc:5.45")
+            }
+        }
     }
 
     @IBAction func buttonConnectSparkClicked(_ sender: Any) {
@@ -112,7 +126,6 @@ extension ViewController {
 
 // Spark control
 extension ViewController {
-    
 
     struct Movement {
 
@@ -143,12 +156,16 @@ extension ViewController {
     }
     
     
-    func takeOff() {
+    func takeOff(finished: (() -> ())? = nil) {
         flightAction { s in
             s.startTakeoff(completion: { (err) in
                 print(err.debugDescription)
                 print("take off ended")
             })
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
+                finished?()
+            }
         }
     }
     func landing () {
@@ -160,14 +177,13 @@ extension ViewController {
         }
     }
     
-    func sequence() {
-        takeOff()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
+    func sequence(takeOffFinished: (() -> ())? = nil) {
+        takeOff {
+            takeOffFinished?()
             self.arcAim {
                 self.landing()
             }
         }
-
     }
     
     func arcAim(finished: (() -> ())? = nil) {
@@ -210,6 +226,3 @@ extension ViewController {
         }
     }
 }
-
-
-
