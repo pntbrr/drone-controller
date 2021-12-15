@@ -2,27 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Usage description</string>
-	<key>NSLocationUsageDescription</key>
-	<string>desc</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Usage description</string>
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>Yo mec je veux voir le drone</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>BLE</string>
+	<key>DJISDKAppKey</key>
+	<string>298d160d6cf377ed0d74e17e</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>DJISDKAppKey</key>
-	<string>4430ef96f00ae9d20966ba47</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

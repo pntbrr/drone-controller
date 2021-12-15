@@ -29,7 +29,9 @@ class ViewController: UIViewController {
             print(message)
             if message == "rise" {
                 // On mettra le délai de la séquence ici
-                PeerTalkManager.instance.send(message: "start arc:5.45")
+                self.sequence {
+                    PeerTalkManager.instance.send(message: "start arc:5")
+                }
             }
         }
     }
