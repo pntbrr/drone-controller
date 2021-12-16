@@ -10,6 +10,12 @@ import DJISDK
 
 
 
+func asyncDelay(delay: Double, completion: @escaping (() -> ())) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+        completion()
+    }
+}
+
 
 class ViewController: UIViewController {
     
@@ -29,10 +35,14 @@ class ViewController: UIViewController {
             print(message)
             if message == "rise" {
                 // On mettra le délai de la séquence ici
-                self.sequence {
-                    PeerTalkManager.instance.send(message: "start arc:5")
+                self.arcSun {
+                    PeerTalkManager.instance.send(message: "start arc:8")
                 }
             }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.trySparkConnection()
         }
     }
 
@@ -49,7 +59,7 @@ class ViewController: UIViewController {
         landing()
     }
     @IBAction func buttonArc(_ sender: Any) {
-        arcAim()
+        arcSun()
     }
     
     @IBAction func buttonSequence(_ sender: Any) {
@@ -101,6 +111,7 @@ extension ViewController {
      
         if let model = newProduct.model {
             self.connectionStateLabel.text = "\(model) is connected \n"
+            self.connectionStateLabel.textColor = .systemGreen
             Spark.instance.airCraft = DJISDKManager.product() as? DJIAircraft
             
         }
@@ -165,7 +176,7 @@ extension ViewController {
                 print("take off ended")
             })
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { // 5.0
                 finished?()
             }
         }
@@ -182,26 +193,82 @@ extension ViewController {
     func sequence(takeOffFinished: (() -> ())? = nil) {
         takeOff {
             takeOffFinished?()
-            self.arcAim {
-                self.landing()
+            self.sendCommand(Movement(value: 0.6, type: .up))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                self.stop()
+                self.arcAim {
+                    self.landing()
+                }
             }
         }
     }
     
     func arcAim(finished: (() -> ())? = nil) {
-        sendCommand(Movement(value: -0.3, type: .left))
+        sendCommand(Movement(value: -0.25, type: .left))
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.sendCommand(Movement(value: 0.7, type: .rotateRight))
-            self.sendCommand(Movement(value: 0.1, type: .forward))
+            self.sendCommand(Movement(value: 0.55, type: .rotateRight))
+            self.sendCommand(Movement(value: 0.095, type: .forward))
             
             self.lastTime = NSDate.timeIntervalSinceReferenceDate
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4.95) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 8.3) {
                 self.stop()
-                finished?()
+                self.sendCommand(Movement(value: -1, type: .rotateLeft))
+                self.sendCommand(Movement(value: -1, type: .down))
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                    self.sendCommand(Movement(value: 0, type: .rotateLeft))
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    self.stop()
+                    finished?()
+                }
             }
         }
 
+    }
+    
+    func arcSun(takeOffFinished: (() -> ())? = nil) {
+        self.takeOff {
+            takeOffFinished?()
+            let upCommand = Float(0.7)
+            let downCommand = Float(-1.1)
+            let leftCommand = Float(-0.32)
+            let backwardCommand = Float(0.3)
+            let forwardCommand = Float(0.3)
+            let totalTime = 8.0
+            let verticalPrecision = 10
+            
+            for i in 1...verticalPrecision {
+                let progress = Float(i) / Float(verticalPrecision)
+                asyncDelay(delay: (totalTime / 2.0) * Double(progress)) {
+                    self.sendCommand(Movement(value: upCommand * (1 - progress), type: .up))
+                    self.sendCommand(Movement(value: -backwardCommand * (1 - progress), type: .backward))
+                }
+            }
+            
+            self.sendCommand(Movement(value: upCommand, type: .up))
+            self.sendCommand(Movement(value: leftCommand, type: .left))
+            asyncDelay(delay: totalTime / 2.0) {
+                
+                for i in 1...verticalPrecision {
+                    let progress = Float(i) / Float(verticalPrecision)
+                    asyncDelay(delay: (totalTime / 2.0) * Double(progress)) {
+                        self.sendCommand(Movement(value: downCommand * (progress), type: .up))
+                        self.sendCommand(Movement(value: forwardCommand * (progress), type: .forward))
+                    }
+                }
+                self.sendCommand(Movement(value: downCommand / Float(verticalPrecision), type: .down))
+                asyncDelay(delay: totalTime / 2.0) {
+//                    self.stop()
+                    self.sendCommand(Movement(value: -1, type: .down))
+                    self.sendCommand(Movement(value: 0, type: .forward))
+                    self.landing()
+                    asyncDelay(delay: 2.0) {
+                        self.stop()
+                    }
+                }
+            }
+        }
     }
     
     func sendCommand(_ movement:Movement) {
