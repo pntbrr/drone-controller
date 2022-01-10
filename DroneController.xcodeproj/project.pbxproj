@@ -9,6 +9,45 @@
 /* Begin PBXBuildFile section */
 		9EBF7C32F2ACDBB134606055 /* Pods_DroneController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A546061E2438034CB336CA97 /* Pods_DroneController.framework */; };
 		FF195A52275CF3EF00BF6318 /* PeerTalkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF195A51275CF3EF00BF6318 /* PeerTalkManager.swift */; };
+		FF1ADAA9278CBBDD00057B49 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA77278CBBDD00057B49 /* GraphView.swift */; };
+		FF1ADAAA278CBBDD00057B49 /* CGContext+GraphLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA78278CBBDD00057B49 /* CGContext+GraphLines.swift */; };
+		FF1ADAAB278CBBDD00057B49 /* GraphSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA79278CBBDD00057B49 /* GraphSegment.swift */; };
+		FF1ADAAC278CBBDD00057B49 /* SharedToyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA7B278CBBDD00057B49 /* SharedToyBox.swift */; };
+		FF1ADAAD278CBBDD00057B49 /* SDKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA7D278CBBDD00057B49 /* SDKUtils.swift */; };
+		FF1ADAAE278CBBDD00057B49 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA80278CBBDD00057B49 /* Toy.swift */; };
+		FF1ADAAF278CBBDD00057B49 /* SensorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA81278CBBDD00057B49 /* SensorControl.swift */; };
+		FF1ADAB0278CBBDD00057B49 /* SPRKToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA83278CBBDD00057B49 /* SPRKToy.swift */; };
+		FF1ADAB1278CBBDD00057B49 /* SensorControlV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA84278CBBDD00057B49 /* SensorControlV1.swift */; };
+		FF1ADAB2278CBBDD00057B49 /* SpheroV1Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA85278CBBDD00057B49 /* SpheroV1Toy.swift */; };
+		FF1ADAB3278CBBDD00057B49 /* SpheroV1ToyCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA86278CBBDD00057B49 /* SpheroV1ToyCore.swift */; };
+		FF1ADAB4278CBBDD00057B49 /* BB8Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA87278CBBDD00057B49 /* BB8Toy.swift */; };
+		FF1ADAB5278CBBDD00057B49 /* SensorControlV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA89278CBBDD00057B49 /* SensorControlV2.swift */; };
+		FF1ADAB6278CBBDD00057B49 /* BB9EToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA8A278CBBDD00057B49 /* BB9EToy.swift */; };
+		FF1ADAB7278CBBDD00057B49 /* SpheroV2Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA8B278CBBDD00057B49 /* SpheroV2Toy.swift */; };
+		FF1ADAB8278CBBDD00057B49 /* BoltToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA8C278CBBDD00057B49 /* BoltToy.swift */; };
+		FF1ADAB9278CBBDD00057B49 /* R2D2Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA8D278CBBDD00057B49 /* R2D2Toy.swift */; };
+		FF1ADABA278CBBDD00057B49 /* SpheroV2ToyCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA8E278CBBDD00057B49 /* SpheroV2ToyCore.swift */; };
+		FF1ADABB278CBBDD00057B49 /* MiniToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA8F278CBBDD00057B49 /* MiniToy.swift */; };
+		FF1ADABC278CBBDD00057B49 /* ToyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA90278CBBDD00057B49 /* ToyProtocols.swift */; };
+		FF1ADABD278CBBDD00057B49 /* CBUUID+SpheroUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA91278CBBDD00057B49 /* CBUUID+SpheroUUIDs.swift */; };
+		FF1ADABE278CBBDD00057B49 /* ToyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA93278CBBDD00057B49 /* ToyBox.swift */; };
+		FF1ADABF278CBBDD00057B49 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA94278CBBDD00057B49 /* Color+Utils.swift */; };
+		FF1ADAC0278CBBDD00057B49 /* SensorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA96278CBBDD00057B49 /* SensorUtils.swift */; };
+		FF1ADAC1278CBBDD00057B49 /* CommandOperationV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA98278CBBDD00057B49 /* CommandOperationV2.swift */; };
+		FF1ADAC2278CBBDD00057B49 /* CommandSequencerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA99278CBBDD00057B49 /* CommandSequencerV2.swift */; };
+		FF1ADAC3278CBBDD00057B49 /* CommandV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA9A278CBBDD00057B49 /* CommandV2.swift */; };
+		FF1ADAC4278CBBDD00057B49 /* VersionsCommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA9C278CBBDD00057B49 /* VersionsCommandResponse.swift */; };
+		FF1ADAC5278CBBDD00057B49 /* ShouldActionCompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA9D278CBBDD00057B49 /* ShouldActionCompleteResponse.swift */; };
+		FF1ADAC6278CBBDD00057B49 /* SensorCommandResponseV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA9E278CBBDD00057B49 /* SensorCommandResponseV2.swift */; };
+		FF1ADAC7278CBBDD00057B49 /* SensorCommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADA9F278CBBDD00057B49 /* SensorCommandResponse.swift */; };
+		FF1ADAC8278CBBDD00057B49 /* SensorMaskCommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA0278CBBDD00057B49 /* SensorMaskCommandResponse.swift */; };
+		FF1ADAC9278CBBDD00057B49 /* PowerStateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA1278CBBDD00057B49 /* PowerStateResponse.swift */; };
+		FF1ADACA278CBBDD00057B49 /* CollisionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA2278CBBDD00057B49 /* CollisionData.swift */; };
+		FF1ADACB278CBBDD00057B49 /* CommandV1Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA4278CBBDD00057B49 /* CommandV1Operation.swift */; };
+		FF1ADACC278CBBDD00057B49 /* CommandV1Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA5278CBBDD00057B49 /* CommandV1Sequencer.swift */; };
+		FF1ADACD278CBBDD00057B49 /* CommandV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA6278CBBDD00057B49 /* CommandV1.swift */; };
+		FF1ADACE278CBBDD00057B49 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA7278CBBDD00057B49 /* Double+Utils.swift */; };
+		FF1ADACF278CBBDD00057B49 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1ADAA8278CBBDD00057B49 /* String+Utils.swift */; };
 		FF28AC81275A20F40064C8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC80275A20F40064C8EA /* AppDelegate.swift */; };
 		FF28AC83275A20F40064C8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC82275A20F40064C8EA /* SceneDelegate.swift */; };
 		FF28AC85275A20F40064C8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28AC84275A20F40064C8EA /* ViewController.swift */; };
@@ -28,6 +67,45 @@
 		8F4751A25E9CD02FBF5927EE /* Pods-DroneController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneController.debug.xcconfig"; path = "Target Support Files/Pods-DroneController/Pods-DroneController.debug.xcconfig"; sourceTree = "<group>"; };
 		A546061E2438034CB336CA97 /* Pods_DroneController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroneController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF195A51275CF3EF00BF6318 /* PeerTalkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTalkManager.swift; sourceTree = "<group>"; };
+		FF1ADA77278CBBDD00057B49 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		FF1ADA78278CBBDD00057B49 /* CGContext+GraphLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGContext+GraphLines.swift"; sourceTree = "<group>"; };
+		FF1ADA79278CBBDD00057B49 /* GraphSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphSegment.swift; sourceTree = "<group>"; };
+		FF1ADA7B278CBBDD00057B49 /* SharedToyBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedToyBox.swift; sourceTree = "<group>"; };
+		FF1ADA7D278CBBDD00057B49 /* SDKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKUtils.swift; sourceTree = "<group>"; };
+		FF1ADA80278CBBDD00057B49 /* Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		FF1ADA81278CBBDD00057B49 /* SensorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorControl.swift; sourceTree = "<group>"; };
+		FF1ADA83278CBBDD00057B49 /* SPRKToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPRKToy.swift; sourceTree = "<group>"; };
+		FF1ADA84278CBBDD00057B49 /* SensorControlV1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorControlV1.swift; sourceTree = "<group>"; };
+		FF1ADA85278CBBDD00057B49 /* SpheroV1Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV1Toy.swift; sourceTree = "<group>"; };
+		FF1ADA86278CBBDD00057B49 /* SpheroV1ToyCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV1ToyCore.swift; sourceTree = "<group>"; };
+		FF1ADA87278CBBDD00057B49 /* BB8Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BB8Toy.swift; sourceTree = "<group>"; };
+		FF1ADA89278CBBDD00057B49 /* SensorControlV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorControlV2.swift; sourceTree = "<group>"; };
+		FF1ADA8A278CBBDD00057B49 /* BB9EToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BB9EToy.swift; sourceTree = "<group>"; };
+		FF1ADA8B278CBBDD00057B49 /* SpheroV2Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV2Toy.swift; sourceTree = "<group>"; };
+		FF1ADA8C278CBBDD00057B49 /* BoltToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoltToy.swift; sourceTree = "<group>"; };
+		FF1ADA8D278CBBDD00057B49 /* R2D2Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R2D2Toy.swift; sourceTree = "<group>"; };
+		FF1ADA8E278CBBDD00057B49 /* SpheroV2ToyCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV2ToyCore.swift; sourceTree = "<group>"; };
+		FF1ADA8F278CBBDD00057B49 /* MiniToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniToy.swift; sourceTree = "<group>"; };
+		FF1ADA90278CBBDD00057B49 /* ToyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyProtocols.swift; sourceTree = "<group>"; };
+		FF1ADA91278CBBDD00057B49 /* CBUUID+SpheroUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBUUID+SpheroUUIDs.swift"; sourceTree = "<group>"; };
+		FF1ADA93278CBBDD00057B49 /* ToyBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyBox.swift; sourceTree = "<group>"; };
+		FF1ADA94278CBBDD00057B49 /* Color+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
+		FF1ADA96278CBBDD00057B49 /* SensorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorUtils.swift; sourceTree = "<group>"; };
+		FF1ADA98278CBBDD00057B49 /* CommandOperationV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandOperationV2.swift; sourceTree = "<group>"; };
+		FF1ADA99278CBBDD00057B49 /* CommandSequencerV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSequencerV2.swift; sourceTree = "<group>"; };
+		FF1ADA9A278CBBDD00057B49 /* CommandV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV2.swift; sourceTree = "<group>"; };
+		FF1ADA9C278CBBDD00057B49 /* VersionsCommandResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionsCommandResponse.swift; sourceTree = "<group>"; };
+		FF1ADA9D278CBBDD00057B49 /* ShouldActionCompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldActionCompleteResponse.swift; sourceTree = "<group>"; };
+		FF1ADA9E278CBBDD00057B49 /* SensorCommandResponseV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorCommandResponseV2.swift; sourceTree = "<group>"; };
+		FF1ADA9F278CBBDD00057B49 /* SensorCommandResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorCommandResponse.swift; sourceTree = "<group>"; };
+		FF1ADAA0278CBBDD00057B49 /* SensorMaskCommandResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorMaskCommandResponse.swift; sourceTree = "<group>"; };
+		FF1ADAA1278CBBDD00057B49 /* PowerStateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerStateResponse.swift; sourceTree = "<group>"; };
+		FF1ADAA2278CBBDD00057B49 /* CollisionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionData.swift; sourceTree = "<group>"; };
+		FF1ADAA4278CBBDD00057B49 /* CommandV1Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV1Operation.swift; sourceTree = "<group>"; };
+		FF1ADAA5278CBBDD00057B49 /* CommandV1Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV1Sequencer.swift; sourceTree = "<group>"; };
+		FF1ADAA6278CBBDD00057B49 /* CommandV1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV1.swift; sourceTree = "<group>"; };
+		FF1ADAA7278CBBDD00057B49 /* Double+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
+		FF1ADAA8278CBBDD00057B49 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		FF28AC7D275A20F40064C8EA /* DroneController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28AC80275A20F40064C8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF28AC82275A20F40064C8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +159,148 @@
 			path = Communication;
 			sourceTree = "<group>";
 		};
+		FF1ADA75278CBBDD00057B49 /* SpheroStarter */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA76278CBBDD00057B49 /* Graph */,
+				FF1ADA7A278CBBDD00057B49 /* SpheroSDK */,
+			);
+			path = SpheroStarter;
+			sourceTree = "<group>";
+		};
+		FF1ADA76278CBBDD00057B49 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA77278CBBDD00057B49 /* GraphView.swift */,
+				FF1ADA78278CBBDD00057B49 /* CGContext+GraphLines.swift */,
+				FF1ADA79278CBBDD00057B49 /* GraphSegment.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		FF1ADA7A278CBBDD00057B49 /* SpheroSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA7B278CBBDD00057B49 /* SharedToyBox.swift */,
+				FF1ADA7C278CBBDD00057B49 /* SDK */,
+			);
+			path = SpheroSDK;
+			sourceTree = "<group>";
+		};
+		FF1ADA7C278CBBDD00057B49 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA7D278CBBDD00057B49 /* SDKUtils.swift */,
+				FF1ADA7E278CBBDD00057B49 /* BLE */,
+				FF1ADA94278CBBDD00057B49 /* Color+Utils.swift */,
+				FF1ADA95278CBBDD00057B49 /* Commands */,
+				FF1ADAA7278CBBDD00057B49 /* Double+Utils.swift */,
+				FF1ADAA8278CBBDD00057B49 /* String+Utils.swift */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		FF1ADA7E278CBBDD00057B49 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA7F278CBBDD00057B49 /* Toy */,
+				FF1ADA91278CBBDD00057B49 /* CBUUID+SpheroUUIDs.swift */,
+				FF1ADA92278CBBDD00057B49 /* ToyBox */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		FF1ADA7F278CBBDD00057B49 /* Toy */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA80278CBBDD00057B49 /* Toy.swift */,
+				FF1ADA81278CBBDD00057B49 /* SensorControl.swift */,
+				FF1ADA82278CBBDD00057B49 /* V1Toys */,
+				FF1ADA88278CBBDD00057B49 /* V2Toys */,
+				FF1ADA90278CBBDD00057B49 /* ToyProtocols.swift */,
+			);
+			path = Toy;
+			sourceTree = "<group>";
+		};
+		FF1ADA82278CBBDD00057B49 /* V1Toys */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA83278CBBDD00057B49 /* SPRKToy.swift */,
+				FF1ADA84278CBBDD00057B49 /* SensorControlV1.swift */,
+				FF1ADA85278CBBDD00057B49 /* SpheroV1Toy.swift */,
+				FF1ADA86278CBBDD00057B49 /* SpheroV1ToyCore.swift */,
+				FF1ADA87278CBBDD00057B49 /* BB8Toy.swift */,
+			);
+			path = V1Toys;
+			sourceTree = "<group>";
+		};
+		FF1ADA88278CBBDD00057B49 /* V2Toys */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA89278CBBDD00057B49 /* SensorControlV2.swift */,
+				FF1ADA8A278CBBDD00057B49 /* BB9EToy.swift */,
+				FF1ADA8B278CBBDD00057B49 /* SpheroV2Toy.swift */,
+				FF1ADA8C278CBBDD00057B49 /* BoltToy.swift */,
+				FF1ADA8D278CBBDD00057B49 /* R2D2Toy.swift */,
+				FF1ADA8E278CBBDD00057B49 /* SpheroV2ToyCore.swift */,
+				FF1ADA8F278CBBDD00057B49 /* MiniToy.swift */,
+			);
+			path = V2Toys;
+			sourceTree = "<group>";
+		};
+		FF1ADA92278CBBDD00057B49 /* ToyBox */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA93278CBBDD00057B49 /* ToyBox.swift */,
+			);
+			path = ToyBox;
+			sourceTree = "<group>";
+		};
+		FF1ADA95278CBBDD00057B49 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA96278CBBDD00057B49 /* SensorUtils.swift */,
+				FF1ADA97278CBBDD00057B49 /* CommandV2 */,
+				FF1ADA9B278CBBDD00057B49 /* CommandResponses */,
+				FF1ADAA3278CBBDD00057B49 /* CommandV1 */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		FF1ADA97278CBBDD00057B49 /* CommandV2 */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA98278CBBDD00057B49 /* CommandOperationV2.swift */,
+				FF1ADA99278CBBDD00057B49 /* CommandSequencerV2.swift */,
+				FF1ADA9A278CBBDD00057B49 /* CommandV2.swift */,
+			);
+			path = CommandV2;
+			sourceTree = "<group>";
+		};
+		FF1ADA9B278CBBDD00057B49 /* CommandResponses */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADA9C278CBBDD00057B49 /* VersionsCommandResponse.swift */,
+				FF1ADA9D278CBBDD00057B49 /* ShouldActionCompleteResponse.swift */,
+				FF1ADA9E278CBBDD00057B49 /* SensorCommandResponseV2.swift */,
+				FF1ADA9F278CBBDD00057B49 /* SensorCommandResponse.swift */,
+				FF1ADAA0278CBBDD00057B49 /* SensorMaskCommandResponse.swift */,
+				FF1ADAA1278CBBDD00057B49 /* PowerStateResponse.swift */,
+				FF1ADAA2278CBBDD00057B49 /* CollisionData.swift */,
+			);
+			path = CommandResponses;
+			sourceTree = "<group>";
+		};
+		FF1ADAA3278CBBDD00057B49 /* CommandV1 */ = {
+			isa = PBXGroup;
+			children = (
+				FF1ADAA4278CBBDD00057B49 /* CommandV1Operation.swift */,
+				FF1ADAA5278CBBDD00057B49 /* CommandV1Sequencer.swift */,
+				FF1ADAA6278CBBDD00057B49 /* CommandV1.swift */,
+			);
+			path = CommandV1;
+			sourceTree = "<group>";
+		};
 		FF28AC74275A20F40064C8EA = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +325,7 @@
 				FF195A50275CF3DB00BF6318 /* Communication */,
 				FF28AC94275A246C0064C8EA /* SparkSDK */,
 				FF28AC80275A20F40064C8EA /* AppDelegate.swift */,
+				FF1ADA75278CBBDD00057B49 /* SpheroStarter */,
 				FF28AC82275A20F40064C8EA /* SceneDelegate.swift */,
 				FF28AC84275A20F40064C8EA /* ViewController.swift */,
 				FF28AC86275A20F40064C8EA /* Main.storyboard */,
@@ -251,16 +472,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1ADAC6278CBBDD00057B49 /* SensorCommandResponseV2.swift in Sources */,
+				FF1ADABC278CBBDD00057B49 /* ToyProtocols.swift in Sources */,
+				FF1ADACC278CBBDD00057B49 /* CommandV1Sequencer.swift in Sources */,
+				FF1ADAC4278CBBDD00057B49 /* VersionsCommandResponse.swift in Sources */,
+				FF1ADAB2278CBBDD00057B49 /* SpheroV1Toy.swift in Sources */,
+				FF1ADAAE278CBBDD00057B49 /* Toy.swift in Sources */,
+				FF1ADAAA278CBBDD00057B49 /* CGContext+GraphLines.swift in Sources */,
+				FF1ADAB0278CBBDD00057B49 /* SPRKToy.swift in Sources */,
+				FF1ADAC2278CBBDD00057B49 /* CommandSequencerV2.swift in Sources */,
+				FF1ADAB1278CBBDD00057B49 /* SensorControlV1.swift in Sources */,
+				FF1ADABD278CBBDD00057B49 /* CBUUID+SpheroUUIDs.swift in Sources */,
+				FF1ADAB9278CBBDD00057B49 /* R2D2Toy.swift in Sources */,
+				FF1ADACB278CBBDD00057B49 /* CommandV1Operation.swift in Sources */,
 				FF28AC85275A20F40064C8EA /* ViewController.swift in Sources */,
+				FF1ADAC1278CBBDD00057B49 /* CommandOperationV2.swift in Sources */,
 				FF28AC9E275A255A0064C8EA /* MovingManager.swift in Sources */,
+				FF1ADAC7278CBBDD00057B49 /* SensorCommandResponse.swift in Sources */,
 				FF28AC9C275A255A0064C8EA /* DirectionSequence.swift in Sources */,
+				FF1ADACA278CBBDD00057B49 /* CollisionData.swift in Sources */,
+				FF1ADACD278CBBDD00057B49 /* CommandV1.swift in Sources */,
+				FF1ADAC0278CBBDD00057B49 /* SensorUtils.swift in Sources */,
+				FF1ADAA9278CBBDD00057B49 /* GraphView.swift in Sources */,
+				FF1ADABE278CBBDD00057B49 /* ToyBox.swift in Sources */,
 				FF28AC9D275A255A0064C8EA /* Movement.swift in Sources */,
 				FF28AC81275A20F40064C8EA /* AppDelegate.swift in Sources */,
+				FF1ADAB3278CBBDD00057B49 /* SpheroV1ToyCore.swift in Sources */,
 				FF195A52275CF3EF00BF6318 /* PeerTalkManager.swift in Sources */,
+				FF1ADAC9278CBBDD00057B49 /* PowerStateResponse.swift in Sources */,
 				FF28AC83275A20F40064C8EA /* SceneDelegate.swift in Sources */,
+				FF1ADAB6278CBBDD00057B49 /* BB9EToy.swift in Sources */,
 				FF28ACA3275A29B40064C8EA /* ProductCommunicationManager.swift in Sources */,
+				FF1ADAB4278CBBDD00057B49 /* BB8Toy.swift in Sources */,
 				FF28AC9F275A255A0064C8EA /* CGPoints+Extensions.swift in Sources */,
+				FF1ADAAC278CBBDD00057B49 /* SharedToyBox.swift in Sources */,
+				FF1ADAAF278CBBDD00057B49 /* SensorControl.swift in Sources */,
+				FF1ADAAB278CBBDD00057B49 /* GraphSegment.swift in Sources */,
+				FF1ADACE278CBBDD00057B49 /* Double+Utils.swift in Sources */,
+				FF1ADABB278CBBDD00057B49 /* MiniToy.swift in Sources */,
+				FF1ADABA278CBBDD00057B49 /* SpheroV2ToyCore.swift in Sources */,
+				FF1ADAAD278CBBDD00057B49 /* SDKUtils.swift in Sources */,
+				FF1ADACF278CBBDD00057B49 /* String+Utils.swift in Sources */,
 				FF28ACA1275A25A00064C8EA /* Spark.swift in Sources */,
+				FF1ADABF278CBBDD00057B49 /* Color+Utils.swift in Sources */,
+				FF1ADAB8278CBBDD00057B49 /* BoltToy.swift in Sources */,
+				FF1ADAC5278CBBDD00057B49 /* ShouldActionCompleteResponse.swift in Sources */,
+				FF1ADAB5278CBBDD00057B49 /* SensorControlV2.swift in Sources */,
+				FF1ADAB7278CBBDD00057B49 /* SpheroV2Toy.swift in Sources */,
+				FF1ADAC8278CBBDD00057B49 /* SensorMaskCommandResponse.swift in Sources */,
+				FF1ADAC3278CBBDD00057B49 /* CommandV2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     var lastTime = 0.0
     var stopNow = false
     
+    var allSpherosConnected = false
+    var peerTalkConnected = false
+    
+    let greenGrape:UIColor = UIColor(red: 150/255, green: 255/255, blue: 10/255, alpha: 1)
+    let purpleGrape:UIColor = UIColor(red: 140/255, green: 0/255, blue: 205/255, alpha: 1)
 
     @IBOutlet weak var connectionStateLabel: UILabel!
     override func viewDidLoad() {
@@ -30,19 +35,41 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         PeerTalkManager.instance.onConnect { address in
             print("connected to \(address)")
+            self.peerTalkConnected = true
+            if (self.allSpherosConnected) {
+                PeerTalkManager.instance.send(message: "spheros connected")
+            }
         }
         PeerTalkManager.instance.onMessage { message in
-            print(message)
             if message == "rise" {
                 // On mettra le délai de la séquence ici
                 self.arcSun {
                     PeerTalkManager.instance.send(message: "start arc:8")
                 }
             }
+            if message == "grow" {
+                self.grapeRipens(colorFrom: self.greenGrape, colorTo: self.purpleGrape, duration: 8)
+            }
+            if message == "start" {
+                SharedToyBox.instance.bolts.forEach { bolt in
+                    print("bolt")
+                    bolt.setMainLed(color: self.greenGrape)
+                    bolt.setFrontLed(color: self.greenGrape)
+                    bolt.setBackLed(color: self.greenGrape)
+                }
+            }
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.trySparkConnection()
+        }
+        DispatchQueue.main.async {
+            self.connectSpheros {
+                print("spheros connected")
+                if (self.peerTalkConnected) {
+                    PeerTalkManager.instance.send(message: "spheros connected")
+                }
+            }
         }
     }
 
@@ -136,6 +163,82 @@ extension ViewController {
     }
 }
 
+// Spheros control
+extension ViewController {
+    
+    func connectSpheros(spherosConnected: (() -> ())? = nil) {
+        // SB-313C - SB-A729 - SB-6C4C
+        SharedToyBox.instance.searchForBoltsNamed(["SB-A729", "SB-6C4C"]) { err in
+            if err == nil {
+                if(SharedToyBox.instance.bolts.count == 2) {
+                    
+                    SharedToyBox.instance.bolts.forEach { bolt in
+                        bolt.setStabilization(state: SetStabilization.State.off)
+                        
+                        bolt.setMainLed(color: .blue)
+                        bolt.setFrontLed(color: .blue)
+                        bolt.setBackLed(color: .blue)
+                    }
+                    
+                    spherosConnected?()
+                    self.allSpherosConnected = true
+                } else {
+                    print("Missed to connect to all spheros needed")
+
+                }
+            } else {
+                print("Failed to connect : \(String(describing: err))")
+            }
+        }
+    }
+    
+    func grapeRipens(colorFrom: UIColor, colorTo: UIColor, duration: Int) {
+        let timing = 1 / 8
+        let interpolationArray2 = self.colorInterpolation(colorFrom: colorFrom, colorTo: colorTo, duration: duration)
+        let percent = Double(interpolationArray2.count) / 100 * 80
+            
+        SharedToyBox.instance.bolts.forEach { bolt in
+                for t in 0...( interpolationArray2.count - 1) {
+                    if Double(t) <= round(percent) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + Double(timing * t)) {
+                            bolt.setMainLed(color: interpolationArray2[t])
+                            bolt.setFrontLed(color: interpolationArray2[t])
+                            bolt.setBackLed(color: interpolationArray2[t])
+                        }
+                    }
+                }
+            }
+        }
+    
+func colorInterpolation(colorFrom: UIColor, colorTo: UIColor, duration:Int = 1) -> [UIColor] {
+        // pour 1s 30 x 33ms
+        let steps = 10 * duration
+        var interpolationArray:[UIColor] = []
+        
+        let color1 = colorFrom.rgbValues()
+        let color2 = colorTo.rgbValues()
+        
+        let pasR = (color2.r - color1.r) / CGFloat(steps)
+        let pasG = (color2.g - color1.g) / CGFloat(steps)
+        let pasB = (color2.b - color1.b) / CGFloat(steps)
+        
+        var currentR = color1.r
+        var currentG = color1.g
+        var currentB = color1.b
+        
+        for _ in 0...(steps-1) {
+   
+            currentR += pasR
+            currentG += pasG
+            currentB += pasB
+                                                
+            let color:UIColor = UIColor(red: currentR, green: currentG, blue: currentB, alpha: 1)
+                                
+            interpolationArray.append(color)
+        }
+        return interpolationArray
+    }
+}
 
 // Spark control
 extension ViewController {
