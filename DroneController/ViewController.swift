@@ -233,8 +233,8 @@ extension ViewController {
             let upCommand = Float(0.7)
             let downCommand = Float(-1.1)
             let leftCommand = Float(-0.32)
-            let backwardCommand = Float(0.2)
-            let forwardCommand = Float(0.3)
+            let backwardCommand = Float(0.0)
+            let forwardCommand = Float(0.0)
             let totalTime = 8.0
             let verticalPrecision = 10
             
